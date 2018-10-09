@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SimpleMdEditor</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div id="editor">
+    <textarea :value="input" @input="update"></textarea>
+    <div v-html="compliedMd"></div>
+</div>
+<script src="../vue.js"></script>
+<script src="vendor/marked.js"></script>
+<script src="vendor/lodash.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
